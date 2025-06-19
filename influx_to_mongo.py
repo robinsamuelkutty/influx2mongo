@@ -3,7 +3,7 @@ from pymongo import MongoClient
 import os
 
 #  InfluxDB Setup 
-token = os.environ.get("INFLUXDB_TOKEN")  # you already exported this
+token = os.environ.get("INFLUXDB_TOKEN") 
 org = "RescueLink"
 url = "http://localhost:8086"
 bucket = "testbucket"
