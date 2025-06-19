@@ -2,7 +2,7 @@ from influxdb_client import InfluxDBClient
 from pymongo import MongoClient
 import os
 
-# ------------------ InfluxDB Setup ------------------
+#  InfluxDB Setup 
 token = os.environ.get("INFLUXDB_TOKEN")  # you already exported this
 org = "RescueLink"
 url = "http://localhost:8086"
@@ -19,12 +19,12 @@ from(bucket: "testbucket")
 
 tables = query_api.query(query, org=org)
 
-# ------------------ MongoDB Setup ------------------
+#  MongoDB Setup 
 mongo_uri = "your mongodb atlas uri"
 mongo_client = MongoClient(mongo_uri)
 mongo_collection = mongo_client["influx_backup"]["sensor_data"]
 
-# ------------------ Transfer Data ------------------
+# Transfer Data 
 count = 0
 for table in tables:
     for record in table.records:
