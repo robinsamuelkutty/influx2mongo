@@ -1,4 +1,4 @@
-# ⏱️ ChronoBridge: InfluxDB to MongoDB Atlas Connector
+#  InfluxDB to MongoDB Atlas Connector
 
 > A simple Python project to insert time-series data into InfluxDB (OSS 2.x) and back it up to MongoDB Atlas — perfect for IoT, analytics, or personal monitoring projects.
 
