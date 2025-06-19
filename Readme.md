@@ -85,7 +85,7 @@ point = (
 write_api.write(bucket=bucket, org=org, record=point)
 print("✅ Dummy data written to InfluxDB.")
 ```
-##🔷 Step 5: Query Data from InfluxDB
+## 🔷 Step 5: Query Data from InfluxDB
 ```bash
 query_api = write_client.query_api()
 
@@ -107,4 +107,18 @@ for table in tables:
         print("------")
 ```
 ## Use the influx_to_mongodb.py
-## these all steps are explained very well in the localhost:8086 -> python section
+## ✅✅✅✅these all steps are explained very well in the localhost:8086 -> python section✅✅✅
+## Sample MongoDB Document
+```bash
+{
+  "measurement": "weather",
+  "field": "temperature",
+  "value": 29,
+  "tags": {
+    "location": "Cochin"
+  },
+  "time": "2025-06-18T15:44:00Z"
+}
+
+```
+
